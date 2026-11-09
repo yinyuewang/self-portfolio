@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Caveat:wght@400;700&family=Inter:wght@300;400;600;800;900&family=Noto+Sans+SC:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ============ 顶部标题栏 ============ -->
+  <header class="top-bar">
+    <span class="top-title">My Portfolio</span>
+  </header>
+
+  <!-- ============ 左侧竖排导航 ============ -->
+  <nav class="side-nav">
+    <ul>
+      <li><a href="#home" class="nav-item"><span class="nav-en">HOME</span><span class="nav-cn">主页</span></a></li>
+      <li><a href="#skills" class="nav-item"><span class="nav-en">SKILLS</span><span class="nav-cn">能力</span></a></li>
+      <li><a href="#works" class="nav-item"><span class="nav-en">WORKS</span><span class="nav-cn">作品集</span></a></li>
+      <li><a href="#about" class="nav-item"><span class="nav-en">ABOUT ME</span><span class="nav-cn">关于我</span></a></li>
+    </ul>
+    <span class="nav-deco">♪</span>
+  </nav>
+
+  <!-- ============ 首屏：拼贴展示 ============ -->
+  <section id="home" class="hero">
+    <div class="collage">
+      <img class="collage-item c1 draggable" src="assets/stickers/clipnote.jpg" alt="便签" draggable="false" data-rotate="-8" />
+      <img class="collage-item c2 draggable" src="assets/stickers/cats.jpg" alt="猫咪插画" draggable="false" data-rotate="5" />
+      <img class="collage-item c3 draggable" src="assets/stickers/houses.jpg" alt="小房子" draggable="false" data-rotate="-4" />
+      <img class="collage-item c4 draggable" src="assets/stickers/badges.jpg" alt="徽章" draggable="false" data-rotate="9" />
+      <img class="collage-item c5 draggable" src="assets/stickers/stamps.jpg" alt="邮票" draggable="false" data-rotate="-6" />
+      <img class="collage-item c6 draggable" src="assets/stickers/clips.jpg" alt="长尾夹" draggable="false" data-rotate="4" />
+    </div>
+    <p class="hero-sign">My Portfolio</p>
+  </section>
+
+  <!-- ============ 关键词板块 vibe / coding ============ -->
+  <section class="keywords">
+    <div class="kw-row">
+      <span class="kw-label">CREATIVE<br /><em>创意设计</em></span>
+      <span class="kw-star">*</span>
+      <h2 class="kw-text">vibe</h2>
+      <span class="kw-star">*</span>
+      <span class="kw-block"></span>
+    </div>
+    <div class="kw-row">
+      <span class="kw-label">DIGITAL<br /><em>数字营销</em></span>
+      <span class="kw-star">*</span>
+      <h2 class="kw-text">coding</h2>
+      <span class="kw-star">*</span>
+      <span class="kw-block"></span>
+    </div>
+  </section>
+
+  <!-- ============ 个人能力（点击打开弹层） ============ -->
+  <section id="skills" class="entry-section">
+    <div class="entry-card" data-modal="skillsModal">
+      <div class="entry-left">
+        <span class="entry-num">01</span>
+        <span class="entry-tag">SKILLS</span>
+      </div>
+      <div class="entry-mid">
+        <h2 class="entry-title">个人能力 <span>展示</span></h2>
+        <p class="entry-desc">简历 · 技能 · 过往项目</p>
+      </div>
+      <div class="entry-right">
+        <span class="entry-arrow">→</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 作品集 / 摄影（点击打开弹层） ============ -->
+  <section id="works" class="entry-section">
+    <div class="entry-card entry-card--film" data-modal="worksModal">
+      <div class="entry-left">
+        <span class="entry-num">02</span>
+        <span class="entry-tag">WORKS</span>
+      </div>
+      <div class="entry-mid">
+        <h2 class="entry-title">摄影作品 <span>胶卷集</span></h2>
+        <p class="entry-desc">Film Photography · 35mm</p>
+      </div>
+      <div class="entry-right">
+        <span class="entry-arrow">→</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 关于我 ============ -->
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div class="about-photo">
+        <img src="assets/stickers/clips.jpg" alt="about" />
+      </div>
+      <div class="about-text">
+        <h2>ABOUT ME <span>关于我</span></h2>
+        <p>
+          你好，我是一名热爱创意与设计的创作者。<br />
+          专注于视觉设计、插画与前端实现，<br />
+          喜欢用拼贴、手帐与色彩记录生活，<br />
+          也乐于把灵感落地成真实可用的产品。
+        </p>
+        <ul class="about-tags">
+          <li>视觉设计</li>
+          <li>插画</li>
+          <li>UI/UX</li>
+          <li>前端开发</li>
+          <li>品牌策划</li>
+        </ul>
+        <a href="mailto:hello@example.com" class="about-btn">联系我 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="footer">
+    <p>© 2026 My Portfolio. Made with care.</p>
+  </footer>
+
+  <!-- ============================================================
+       弹层 1：个人能力 / 简历 + 过往作品
+       ============================================================ -->
+  <div class="modal" id="skillsModal" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="关闭">✕</button>
+
+      <div class="modal-content">
+        <header class="modal-head">
+          <span class="modal-kicker">01 / SKILLS</span>
+          <h2 class="modal-title">个人能力展示</h2>
+        </header>
+
+        <!-- 简历：技能条 -->
+        <div class="resume-block">
+          <h3 class="block-h">核心技能</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-name"><span>视觉设计</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="95"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>插画创作</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="90"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>UI / UX 设计</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="88"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>前端开发</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="82"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>品牌策划</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="85"></span></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name"><span>动效设计</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar"><span class="skill-fill" data-width="78"></span></div>
+            </div>
+          </div>
+
+          <div class="skill-tags">
+            <span class="s-tag">Photoshop</span>
+            <span class="s-tag">Illustrator</span>
+            <span class="s-tag">Figma</span>
+            <span class="s-tag">HTML / CSS</span>
+            <span class="s-tag">JavaScript</span>
+            <span class="s-tag">After Effects</span>
+            <span class="s-tag">Procreate</span>
+            <span class="s-tag">Blender</span>
+          </div>
+        </div>
+
+        <!-- 过往作品展示 -->
+        <div class="resume-block">
+          <h3 class="block-h">过往项目</h3>
+          <div class="past-grid">
+            <article class="past-card">
+              <div class="past-cover" style="background:linear-gradient(135deg,#f4e4e4,#e9c9c9)"></div>
+              <div class="past-info">
+                <h4>樱花手帐品牌视觉</h4>
+                <p>2026 · 品牌设计</p>
+              </div>
+            </article>
+            <article class="past-card">
+              <div class="past-cover" style="background:linear-gradient(135deg,#cfe3f0,#a8d0e6)"></div>
+              <div class="past-info">
+                <h4>猫咪邮局 App</h4>
+                <p>2025 · UI/UX</p>
+              </div>
+            </article>
+            <article class="past-card">
+              <div class="past-cover" style="background:linear-gradient(135deg,#fff3b0,#ffe08a)"></div>
+              <div class="past-info">
+                <h4>奶油公寓插画集</h4>
+                <p>2025 · 插画</p>
+              </div>
+            </article>
+            <article class="past-card">
+              <div class="past-cover" style="background:linear-gradient(135deg,#d8c8e8,#bfa5d6)"></div>
+              <div class="past-info">
+                <h4>星之乐章海报</h4>
+                <p>2024 · 平面设计</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 经历时间线 -->
+        <div class="resume-block">
+          <h3 class="block-h">经历</h3>
+          <ul class="timeline">
+            <li>
+              <span class="tl-year">2024 — 至今</span>
+              <span class="tl-dot"></span>
+              <div class="tl-body">
+                <strong>自由设计师</strong>
+                <p>独立承接品牌视觉、插画与前端项目</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-year">2022 — 2024</span>
+              <span class="tl-dot"></span>
+              <div class="tl-body">
+                <strong>某创意工作室 · 视觉设计师</strong>
+                <p>负责品牌全案与插画产出</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       弹层 2：作品集 / 胶卷摄影（横排胶片条）
+       ============================================================ -->
+  <div class="modal" id="worksModal" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-panel modal-panel--film" role="dialog" aria-modal="true">
+      <button class="modal-close modal-close--light" data-close aria-label="关闭">✕</button>
+
+      <div class="film-grain"></div>
+
+      <div class="modal-content">
+        <!-- 标题区 -->
+        <header class="film-head">
+          <h2 class="film-title">My Creative Space</h2>
+          <div class="film-reel-icon">
+            <svg viewBox="0 0 64 64" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="32" cy="32" r="28" />
+              <circle cx="32" cy="32" r="6" />
+              <circle cx="32" cy="12" r="3" fill="currentColor" />
+              <circle cx="32" cy="52" r="3" fill="currentColor" />
+              <circle cx="12" cy="32" r="3" fill="currentColor" />
+              <circle cx="52" cy="32" r="3" fill="currentColor" />
+              <circle cx="18" cy="18" r="3" fill="currentColor" />
+              <circle cx="46" cy="18" r="3" fill="currentColor" />
+              <circle cx="18" cy="46" r="3" fill="currentColor" />
+              <circle cx="46" cy="46" r="3" fill="currentColor" />
+            </svg>
+          </div>
+        </header>
+
+        <!-- 横排胶片条（可横向滚动） -->
+        <div class="film-track">
+          <div class="film-row">
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=deer%20in%20forest%2C%2035mm%20film%20photography%2C%20soft%20natural%20light%2C%20film%20grain%2C%20muted%20warm%20tones%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=forest%20path%20with%20sunlight%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20muted%20green%20tones%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=car%20interior%20view%20of%20mountain%20road%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=green%20hills%20and%20blue%20sky%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20soft%20light%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=misty%20lake%20and%20mountains%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20muted%20blue%20tones%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=old%20town%20alley%20with%20stone%20wall%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20warm%20tones%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ocean%20waves%20from%20above%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20blue%20tones%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=city%20street%20at%20golden%20hour%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20warm%20tones%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cherry%20blossom%20tree%20against%20sky%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20soft%20pink%20tones%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+            <div class="film-cell">
+              <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=field%20of%20wildflowers%2C%2035mm%20film%20photography%2C%20film%20grain%2C%20soft%20light%2C%20analog%20aesthetic&image_size=landscape_4_3" alt="film" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
